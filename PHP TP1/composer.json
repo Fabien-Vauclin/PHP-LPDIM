@@ -2,7 +2,7 @@
     "name": "fabien/tp1",
     "authors": [
         {
-            "name": "Fabien",
+            "name": "Fabien Vauclin",
             "email": "fabien.vauclin@outlook.fr"
         }
     ],
@@ -11,5 +11,5 @@
         "psr-4": {
             "App\\": "src/"
         }
-    }
+    },
 }
