@@ -1,4 +1,8 @@
 <?php
+use App\model\Database;
+use App\model\TaskRepository;
+
+require 'vendor/autoload.php';
 define("DATABASE_FILE", "./data.db");
 $table = "tasks";
 $tasks = [];

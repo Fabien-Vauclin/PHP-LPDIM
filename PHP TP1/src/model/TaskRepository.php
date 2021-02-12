@@ -1,5 +1,8 @@
 <?php
+namespace App\model;
 
+use \PDO;
+use \Exception;
 
 class TaskRepository
 {
