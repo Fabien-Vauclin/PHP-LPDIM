@@ -31,68 +31,7 @@ $database = new SQLite3(DATABASE_FILE);
     <meta charset="utf-8"/>
     <title>My Todo List</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css"/>
-    <style>
-        body {
-            font-family: arial;
-            padding: 0px;
-            margin: 0px;
-        }
 
-        .checked {
-            text-decoration: line-through;
-        }
-
-        .btn-no-style {
-            border: none;
-            background-color: transparent;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        input {
-            cursor: pointer;
-        }
-
-        .taskname-column {
-            width: 90%;
-        }
-
-        table tr:nth-of-type(2n+1) {
-            background-color: #EAEAEA;
-        }
-
-        th {
-            font-size: 100px;
-        }
-
-        .checked-icon {
-            color: #48a868;
-        }
-
-        .checked-icon-grey {
-            color: #AAAAAA;
-        }
-
-        .trash-icon {
-            color: red;
-        }
-
-        td {
-            padding: 10px;
-
-        }
-
-        button {
-            cursor: pointer !important;
-        }
-
-        i {
-            font-size: 25px !important;
-        }
-    </style>
 </head>
 <body>
 <?php
