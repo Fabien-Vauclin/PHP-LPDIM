@@ -1,0 +1,10 @@
+{
+    "name": "fabien/tp1",
+    "authors": [
+        {
+            "name": "Fabien",
+            "email": "fabien.vauclin@outlook.fr"
+        }
+    ],
+    "require": {}
+}
