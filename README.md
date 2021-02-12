@@ -1,9 +1,10 @@
 # PHP-LPDIM
 
-This repository contains the PHP TPs of the LP DIM License : 
+This directory contains the TPs of the PHP module of the LP DIM license :
 
-1. TP1 - **Todo List** ==> The objective is to clean up an application
+TP1 - **Todo List**<br>The objective is to clean up an application
 
-2. TP2 - **Framework Maison** ==> Http Foundation
+TP2 - **Framework Maison**<br> Http Foundation
 
-3. TP3 - **Doctrine** ==> The objective is to use doctrine
+TP3 - **Doctrine**<br>
+The objective is to use doctrine
