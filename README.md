@@ -1,6 +1,6 @@
 # PHP-LPDIM
 
-This directory contains the TPs of the PHP module of the LP DIM license :
+This repository contains the TPs of the PHP module of the LP DIM license :
 
 TP1 - **Todo List**<br>The objective is to clean up an application
 
