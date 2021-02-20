@@ -26,6 +26,7 @@ class PlayerController extends AbstractController
 
     }
 
+
     public function add(Request $request): Response
     {
         $player = FakeData::players(1)[0];
