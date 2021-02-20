@@ -5,17 +5,23 @@ namespace App\Controller;
 use App\FakeData;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Doctrine\ORM\EntityManagerInterface;
+use App\Entity\Player;
 
 class PlayerController extends AbstractController
 {
 
 
-    public function index(Request $request): Response
+    public function index(Request $request, EntityManagerInterface $entityManager): Response
     {
         /**
          * @todo lister les joueurs
          */
-        $players = FakeData::players(25);
+
+        $players = $entityManager
+            ->getRepository(Player::class)
+            ->findAll();
+        //$players = FakeData::players(25);
         return $this->render("player/index", ["players" => $players]);
 
     }
