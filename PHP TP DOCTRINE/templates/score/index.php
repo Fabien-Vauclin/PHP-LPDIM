@@ -27,10 +27,10 @@
                     <?= $score["game"]["name"]; ?>
                 </td>
                 <td class="border-b-2 p-4 dark:border-dark-5">
-                    <?= $score["score"]; ?>
+                    <?= $score->getScore(); ?>
                 </td>
                 <td class="border-b-2 p-4 dark:border-dark-5">
-                    <a href="/score/delete?id=<?= $score["id"]; ?>"
+                    <a href="/score/delete?id=<?= $score->getId(); ?>"
                        onclick="return confirm('Are you sure you want to delete it?')">
                         <i class="fas fa-trash"></i>
                     </a>
