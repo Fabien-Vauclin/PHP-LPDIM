@@ -25,12 +25,20 @@ class ScoreController extends AbstractController
             "games" => $games, "players" => $players]);
     }
 
-    public function add(Request $request): Response
+    public function add(Request $request, EntityManagerInterface $entityManager): Response
     {
+
         if ($request->getMethod() == Request::METHOD_POST) {
+            $scores = FakeData::scores();
             /**
              * @todo enregistrer l'objet
              */
+            $scores
+                ->setId($request->get('id'))
+                ->setScore($request->get('score'));
+
+            $entityManager->persist((object)$scores);
+            $entityManager->flush();
             return $this->redirectTo("/score");
         }
     }
