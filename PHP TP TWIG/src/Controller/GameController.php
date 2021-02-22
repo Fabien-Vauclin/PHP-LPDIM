@@ -22,7 +22,7 @@ class GameController extends AbstractController
             ->findAll();
 
         $games = FakeData::games(15);
-        return $this->render("game/index", ["games" => $games]);
+        return $this->render("game/index.html.twig", ["games" => $games]);
 
     }
 
@@ -46,14 +46,14 @@ class GameController extends AbstractController
 
             return $this->redirectTo("/game");
         }
-        return $this->render("game/form", ["game" => $game]);
+        return $this->render("game/form.html.twig", ["game" => $game]);
     }
 
 
     public function show($id): Response
     {
         $game = FakeData::games(1)[0];
-        return $this->render("game/show", ["game" => $game]);
+        return $this->render("game/show.html.twig", ["game" => $game]);
     }
 
 
@@ -73,7 +73,7 @@ class GameController extends AbstractController
             $entityManager->flush();
             return $this->redirectTo("/game");
         }
-        return $this->render("game/form", ["game" => $game]);
+        return $this->render("game/form.html.twig", ["game" => $game]);
 
 
     }
